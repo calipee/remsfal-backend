@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.remsfal</groupId>
     <artifactId>remsfal-backend</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
 
     <packaging>pom</packaging>
     <name>remsfal - Backend</name>
@@ -17,7 +17,7 @@
         <connection>scm:git:https://github.com/calipee/remsfal-backend</connection>
         <developerConnection>scm:git:https://github.com/calipee/remsfal-backend</developerConnection>
         <url>https://github.com/calipee/remsfal-backend</url>
-        <tag>remsfal-backend-1.0.0</tag>
+        <tag>remsfal-backend-1.0.1</tag>
     </scm>
     
     <issueManagement>
