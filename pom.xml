@@ -20,6 +20,7 @@
         <connection>scm:git:git@github.com:remsfal/remsfal-backend.git</connection>
         <developerConnection>scm:git:git@github.com:remsfal/remsfal-backend.git</developerConnection>
         <url>https://github.com/remsfal/remsfal-backend</url>
+        <tag>HEAD</tag>
     </scm>
     
     <issueManagement>
@@ -124,6 +125,13 @@
                         </execution>
                     </executions>
                 </plugin>
+                <plugin>
+                  <artifactId>maven-release-plugin</artifactId>
+                  <version>XXX</version>
+                  <configuration>
+                      <scmCommentPrefix>[ci skip]</scmCommentPrefix>
+                  </configuration>
+              </plugin>
             </plugins>
         </pluginManagement>
     </build>
