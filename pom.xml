@@ -17,15 +17,15 @@
     </modules>
 
     <scm>
-        <connection>scm:git:git@github.com:remsfal/remsfal-backend.git</connection>
-        <developerConnection>scm:git:git@github.com:remsfal/remsfal-backend.git</developerConnection>
-        <url>https://github.com/remsfal/remsfal-backend</url>
+        <connection>scm:git:git@github.com:calipee/remsfal-backend.git</connection>
+        <developerConnection>scm:git:git@github.com:calipee/remsfal-backend.git</developerConnection>
+        <url>https://github.com/calipee/remsfal-backend</url>
         <tag>HEAD</tag>
     </scm>
     
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/remsfal/remsfal-backend/issues</url>
+        <url>https://github.com/calipee/remsfal-backend/issues</url>
     </issueManagement>
 
     <properties>

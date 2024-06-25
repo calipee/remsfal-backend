@@ -22,7 +22,7 @@ jobs:
         env:
           JAVA_HOME: /usr/lib/jvm/java-17-openjdk/
         with:
-          maven-project-folder: "remsfal-core"
+          # maven-project-folder: "remsfal-core"
 
           git-release-bot-name: "release-bot"
           git-release-bot-email: "54059879+calipee@users.noreply.github.com"
