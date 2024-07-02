@@ -95,7 +95,7 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1.14.0
         with: 
-          artifacts: "remsfal-core/target/remsfal-core-${{env.RELEASE_VERSION}}.jar, remsfal-service/target/remsfal-service-${{env.RELEASE_VERSION}}.jar"
+          artifacts: "remsfal-service/target/remsfal-service-runner.jar"
           tag: "v${{env.RELEASE_VERSION}}"
           body: "Release version ${{env.RELEASE_VERSION}}"
           allowUpdates: true
