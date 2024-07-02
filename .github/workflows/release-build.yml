@@ -79,12 +79,12 @@ jobs:
           message: "Release version ${RELEASE_VERSION}"
           author_name: "Release Bot"
           author_email: "phonem_winterlich.0i@icloud.com"
-          tag: "v${{RELEASE_VERSION}}"
+          tag: "v${{env.RELEASE_VERSION}}"
   
       - name: Create Release
         uses: ncipollo/release-action@v1.14.0
         with: 
-          artifacts: "remsfal-core/target/remsfal-core-${{RELEASE_VERSION}}.jar, remsfal-service/target/remsfal-service-${{RELEASE_VERSION}}.jar"
-          tag: "v${{RELEASE_VERSION}}"
-          body: "Release version ${{RELEASE_VERSION}}"
+          artifacts: "remsfal-core/target/remsfal-core-${{env.RELEASE_VERSION}}.jar, remsfal-service/target/remsfal-service-${{env.RELEASE_VERSION}}.jar"
+          tag: "v${{env.RELEASE_VERSION}}"
+          body: "Release version ${{env.RELEASE_VERSION}}"
           allowUpdates: true
