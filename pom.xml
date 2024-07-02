@@ -27,7 +27,7 @@
     <url>https://github.com/remsfal/remsfal-backend/issues</url>
   </issueManagement>
 
-  <distributionManagement>
+  <!-- <distributionManagement>
     <snapshotRepository>
       <id>ossrh</id>
       <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
@@ -36,7 +36,7 @@
       <id>ossrh</id>
       <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
-  </distributionManagement>
+  </distributionManagement> -->
 
   <properties>
     <compiler-plugin.version>3.13.0</compiler-plugin.version>
