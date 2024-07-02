@@ -1,9 +1,12 @@
 name: "RELEASE Build"
 
 on:
-    push: 
-#   # Only run this workflow manually from the Actions tab
-#   workflow_dispatch:
+  workflow_dispatch:
+    inputs:
+      nextRelease:
+        description: 'Next Release Version (leave empty to use current version)'
+        required: false
+        default: ''
 
 jobs:
   build:
@@ -22,11 +25,11 @@ jobs:
         run: |
           CURRENT_VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
           echo "Current project version: $CURRENT_VERSION"
-          if [ -z "${{ vars.NEXT_RELEASE }}" ]; then
+          if  [ -z "${{ github.event.inputs.nextRelease }}" ]; then
             # Assumes semantic versioning, increments minor version
             NEXT_VERSION=$(echo $CURRENT_VERSION | awk -F. '{print $1"."$2"."$3+1}')
           else
-            NEXT_VERSION="${{ vars.NEXT_RELEASE }}"
+            NEXT_VERSION="${{ github.event.inputs.nextRelease }}"
           fi
           echo "Next version: $NEXT_VERSION"
           echo "RELEASE_VERSION=$NEXT_VERSION" >> $GITHUB_ENV
