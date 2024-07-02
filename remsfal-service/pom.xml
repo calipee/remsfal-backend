@@ -11,7 +11,7 @@
     <groupId>de.remsfal</groupId>
     <artifactId>remsfal-backend</artifactId>
     <relativePath>../pom.xml</relativePath>
-    <version>v1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
 
