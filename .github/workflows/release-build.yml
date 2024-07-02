@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       nextRelease:
-        description: 'Next Release Version (leave empty to use current version)'
+        description: 'Next Release Version (leave empty to automatically patch current version)'
         required: false
         default: ''
 
@@ -15,10 +15,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Get branch names.
-        id: branch-names
-        uses: tj-actions/branch-names@v8
 
       - name: Determine Next Version
         id: next-version
